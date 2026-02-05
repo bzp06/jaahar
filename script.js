@@ -1,5 +1,5 @@
 // Variable to track scale of the Yes button
-let yesScale = 1.5;
+let yesScale = 2;
 
 // Function for Page 1: Grow the Yes button
 function growYes() {
@@ -80,4 +80,5 @@ document.addEventListener('DOMContentLoaded', function() {
         document.getElementById('final-activity').innerText = activity;
         document.getElementById('final-date').innerText = formattedDate; // + " (adjusted for timezone)";
     }
+
 });
