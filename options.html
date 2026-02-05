@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>First Date</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="container options-container">
+        <h1 class="header-title">Behzaad and Jaahar's First Date!!</h1>
+        <p class="subtitle">what would you like to do for our first date?</p>
+
+        <div class="couple-photos">
+            <div class="photo-frame">
+                <img src="bz.jpg" alt="bz" class="profile-pic" onerror="this.style.display='none'; this.parentElement.style.backgroundColor='#fe9494'">
+            </div>
+            
+            <div class="heart">❤️</div>
+            
+            <div class="photo-frame">
+                <img src="jaahar.jpg" alt="jaahar" class="profile-pic" onerror="this.style.display='none'; this.parentElement.style.backgroundColor='#fe9494'">
+            </div>
+        </div>
+
+        <h2 class="section-heading">Options:</h2>
+
+        <div class="options-grid">
+            <div class="option-card" onclick="selectOption('movie')">
+                <div class="option-text">
+                    <h3>Movie Date: Watch a movie together</h3>
+                    <p>You choose the movie, i'll bring the popcorn</p>
+                </div>
+                <img src="popcorn.jpg" alt="Movie" class="option-img">
+                <div class="selection-box" id="select-movie"></div>
+            </div>
+
+            <div class="option-card" onclick="selectOption('cook')">
+                <div class="option-text">
+                    <h3>Dinner Date: CHAAAAATTT TIME</h3>
+                    <p>We do a chaat eating competition to see who eats the most</p>
+                </div>
+                <img src="chaat.jpg" alt="Cooking" class="option-img">
+                <div class="selection-box" id="select-cook"></div>
+            </div>
+
+            <div class="option-card" onclick="selectOption('game')">
+                <div class="option-text">
+                    <h3>Play Date: We play games together</h3>
+                    <p>We can play a bunch of board games or online games</p>
+                </div>
+                <img src="game.jpg" alt="Gaming" class="option-img">
+                <div class="selection-box" id="select-game"></div>
+            </div>
+
+            <div class="option-card" onclick="selectOption('gallery')">
+                <div class="option-text">
+                    <h3>Paint Date: Bring out your inner picassooo</h3>
+                    <p>We try to paint each other LMAO</p>
+                </div>
+                <img src="paint.jpg" alt="Gallery" class="option-img">
+                <div class="selection-box" id="select-gallery"></div>
+            </div>
+
+            <div class="option-card" onclick="selectOption('badminton')">
+                <div class="option-text">
+                    <h3>Fitness Date: See you on the court</h3>
+                    <p>We play badminton, the loser buys dinner</p>
+                </div>
+                <img src="badminton.jpg" alt="Badminton" class="option-img">
+                <div class="selection-box" id="select-badminton"></div>
+            </div>
+        </div>
+
+        <div class="date-picker-section">
+            <h3>When are you free?</h3>
+            <input type="date" id="date-picker" class="aesthetic-date">
+        </div>
+
+        <button class="submit-btn" onclick="submitDate()">Confirm Date 💖</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
+
+
